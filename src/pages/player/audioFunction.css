@@ -1,0 +1,180 @@
+.audio-function-container {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 24px 48px;
+    box-sizing: border-box;
+}
+
+.audio-function-button-group {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 16vw;
+}
+
+.audio-function-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6vw;
+    height: 6vw;
+    padding: 8px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.audio-function-button-img {
+    width: 2.5vw;
+    height: 2.5vw;
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.audio-function-button:hover {
+    background-color: #ebebeb;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.audio-playlist-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4vw;
+    height: 4vw;
+    padding: 8px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.audio-playlist-button-img {
+    width: 2vw;
+    height: 2vw;
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.audio-playlist-button:hover {
+    background-color: #ebebeb;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.progress-bar {
+    position: relative;
+    top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48vw;
+}
+
+.progress-time {
+    font-size: 16px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.progress-animate{
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    margin: 0 16px;
+    cursor: pointer;
+    outline: none;
+}
+
+.progress-animate::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    height: 6px;
+    border-radius: 4px;
+}
+
+.progress-animate::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    position: relative;
+    height: 16px;
+    width: 16px;
+    margin-top: -5px;
+    border-radius: 50%;
+    background: transparent;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.progress-animate:hover::-webkit-slider-thumb {
+    background: #fb7589;
+    opacity: 1;
+}
+
+.audio-volume-container {
+    display: flex;
+    width: 12vw;
+}
+
+.audio-volume {
+    position: relative;
+    top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12vw;
+}
+
+.audio-volume-button-img {
+    position: relative;
+    top: 2px;
+    width: 2vw;
+    height: 2vw;
+    max-width: 20px;
+    max-height: 20px;
+    cursor: pointer;
+}
+
+.audio-volume-input {
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+    width: 100%;
+    height: 4px;
+    margin-left: 2vw;
+    border-radius: 2px;
+    cursor: pointer;
+    outline: none;
+}
+
+.audio-volume-input::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    height: 6px;
+    border-radius: 4px;
+}
+
+.audio-volume-input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    position: relative;
+    height: 12px;
+    width: 12px;
+    margin-top: -3px;
+    border-radius: 50%;
+    background: #424242;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.audio-volume-input:hover::-webkit-slider-thumb {
+    opacity: 1;
+}
+
+/* Path: frontend\src\pages\player\player.css */

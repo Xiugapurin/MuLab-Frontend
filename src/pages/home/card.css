@@ -1,0 +1,253 @@
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    height: calc(100vh - 136px);
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 24px 32px 24px 64px;
+}
+
+/* 設定卷軸的樣式 */
+.card-container::-webkit-scrollbar {
+    width: 8px;
+    background-color: transparent; 
+}
+
+/* 設定卷軸軌道的樣式 */
+.card-container::-webkit-scrollbar-track {
+    background-color: transparent; 
+}
+  
+/* 設定卷軸滑塊的樣式 */
+.card-container::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    transition: background-color 0.3s;
+    background-color: #7f7f7f;
+}
+
+.card-container.non-scrolling::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.card-container::-webkit-scrollbar-thumb:hover {
+    background-color: #adadad;
+}
+
+/* 設定卷軸滑塊在被拖曳時的樣式 */
+.card-container::-webkit-scrollbar-thumb:active {
+    background-color: #9e9e9e;
+}
+
+/* 預設大於 1280px 時每排五個 */
+.card {
+    position: relative;
+    display: flex;
+    width: calc(20% - 32px);
+    margin-bottom: 32px;
+    margin-right: 32px;
+    aspect-ratio: 4/5;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+
+.card:hover {
+    /* 懸停時的漂浮效果 */
+    transform: scale(1.03);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    z-index: 0;
+}
+
+.card-title {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-size: 16px;
+    font-weight: bold;
+    color: #0e0e0e;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 4px;
+}
+
+.playlist-card {
+    aspect-ratio: 6/5;
+}
+
+.card-author {
+    font-size: 10px;
+    color: #414141;
+    margin-bottom: 40px;
+}
+
+.card-time {
+    position: absolute;
+    left: 8px;
+    bottom: 8px;
+    font-size: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #414141;
+}
+
+/* 每排四個 */
+/* 960 << 1280 */
+@media (max-width: 1280px) {
+    .card {
+        width: calc(25% - 32px);
+    }
+    .card-title {
+        font-size: 14px;
+    }
+}
+
+/* 每排三個 */
+/* 720 << 960 */
+@media (max-width: 960px) {
+    .card {
+        width: calc(33% - 32px);
+    }
+    .card-title {
+        font-size: 14px;
+    }
+}
+
+/* 每排兩個 */
+/* 560 << 720 */
+@media (max-width: 720px) {
+    .card {
+        width: calc(50% - 32px);
+    }
+}
+
+/* 每排一個 */
+/* 0 << 560 */
+@media (max-width: 560px) {
+    .card-container {
+        justify-content: center;
+    }
+    .collection-function-bar {
+        padding: 24px 80px;
+    }
+    .card {
+        width: 75%;
+        aspect-ratio: 1;
+    }
+    .card-title {
+        font-size: 20px;
+    }
+    .card-author {
+        font-size: 14px;
+    }
+    .card-time {
+        font-size: 12px;
+    }
+}
+
+.card-thumbnail img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px 4px 0 0;
+}
+
+.card-info {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.card-more-action-button {
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+    padding: 4px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card-more-action-button:hover {
+    background-color: #dcdcdc;
+}
+
+.card-menu {
+    position: absolute;
+    bottom: 28px;
+    right: 4px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.card-menu-item {
+    color: #000000;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 4px 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.card-menu-item:hover {
+    color: #ffffff;
+    background-color: #fb7589;
+}
+
+.card-empty {
+    display: flex;
+    width: 24vw;
+    max-width: 400px;
+    height: fit-content;
+    flex-direction: column;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    transition: transform 0.3s ease;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.card-empty:hover {
+    /* 懸停時的漂浮效果 */
+    transform: scale(1.03);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    z-index: 0;
+}
+
+.card-empty-thumbnail {
+    width: 100%;
+    aspect-ratio: 16/9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-empty-thumbnail-img {
+    width: 12vw;
+    height: 12vw;
+    object-fit: cover;
+}
+
+.card-empty-title {
+    padding: 8vh 2vw;
+    font-size: 2vw;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+}
