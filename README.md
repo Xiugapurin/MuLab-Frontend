@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# MuLab
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 簡介
 
-## Available Scripts
+此應用程式前端使用 React + Electron 開發
 
-In the project directory, you can run:
+提供 YouTube 音訊下載 & 離線音樂播放功能
 
-### `npm start`
+## 頁面一覽
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 1. 下載音訊
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+:::info
+**第一步**
 
-### `npm test`
+> 輸入網址後，按下下一步按鈕，應用程式將檢查網址並做出相對應的處理
+> :::
+> ![](https://hackmd.io/_uploads/r1SZNspDn.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+:::info
+**第二步**
 
-### `npm run build`
+> 應用程式判斷下載的是單一影音或是播放清單，並提供下載功能
+> :::
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### 播放清單預覽畫面
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![](https://hackmd.io/_uploads/BkA6EjaD2.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### 單一影音預覽畫面
 
-### `npm run eject`
+![](https://hackmd.io/_uploads/ByoErsaP3.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 2. 音樂庫
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![](https://hackmd.io/_uploads/S16OGsaD2.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+:::info
+下載後的音訊會保存於此，可隨時加入任意播放清單，並提供播放全部、排序等功能
+:::
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 3. 播放清單
 
-## Learn More
+![](https://hackmd.io/_uploads/S16f7opvn.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+:::info
+可將下載的音訊儲存到自定義的播放清單中，並進行循環或隨機播放
+:::
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 4. 播放清單詳情
 
-### Code Splitting
+![](https://hackmd.io/_uploads/Hy9cmspPn.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+:::info
+提供播放清單一覽，以及重新排列的功能
+:::
 
-### Analyzing the Bundle Size
+### 5. 播放器
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![](https://hackmd.io/_uploads/SkriBjaw2.png)
 
-### Making a Progressive Web App
+:::info
+提供基本播放功能，並支持循環播放、隨機播放等
+:::
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+![](https://hackmd.io/_uploads/SktJUspvh.png)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+:::info
+選單列提供切歌功能，並可開啟隨機播放
+:::
