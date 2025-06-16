@@ -1,57 +1,56 @@
 # MuLab
 
-## 簡介
+## Introduction
 
-此應用程式前端使用 React + Electron 開發
+This application is a desktop app developed using React and Electron.
+It provides YouTube audio downloading and offline music playback features.
 
-提供 YouTube 音訊下載 & 離線音樂播放功能
+## Overview
 
-## 頁面一覽
+### 1. Download Audio
 
-### 1. 下載音訊
+**Step One**
 
-**第一步**
+> After entering the URL and clicking the "Next" button, the application will verify the URL and process it accordingly.
 
-> 輸入網址後，按下下一步按鈕，應用程式將檢查網址並做出相對應的處理
+![](https://imgur.com/8xsYWrx.png "Download")
 
-![](https://imgur.com/8xsYWrx.png "下載音訊")
+**Step Two**
 
-**第二步**
+> The application will determine whether the link is for a single video or a playlist and provide the appropriate download options.
 
-> 應用程式判斷下載的是單一影音或是播放清單，並提供下載功能
+#### Playlist Preview
 
-#### 播放清單預覽畫面
+![](https://imgur.com/4lhmCby.png "Download")
 
-![](https://imgur.com/4lhmCby.png "下載音訊")
+#### Single Video Preview
 
-#### 單一影音預覽畫面
+![](https://imgur.com/rKfZVml.png "Download")
 
-![](https://imgur.com/rKfZVml.png "下載音訊")
+### 2. Music Library
 
-### 2. 音樂庫
+![](https://imgur.com/fpr8PPB.png "Library")
 
-![](https://imgur.com/fpr8PPB.png "音樂庫")
+> Downloaded audio files will be stored here. You can add them to any playlist, play all, or sort them using available options.
 
-> 下載後的音訊會保存於此，可隨時加入任意播放清單，並提供播放全部、排序等功能
+### 3. Playlists
 
-### 3. 播放清單
+![](https://imgur.com/8NZK3MQ.png "Playlists")
 
-![](https://imgur.com/8NZK3MQ.png "播放清單")
+> You can save downloaded audio into custom playlists and enable loop or shuffle playback.
 
-> 可將下載的音訊儲存到自定義的播放清單中，並進行循環或隨機播放
+### 4. Playlist Details
 
-### 4. 播放清單詳情
+![](https://imgur.com/Frh4FK3.png "Details")
 
-![](https://imgur.com/Frh4FK3.png "播放清單詳情")
+> Provides a detailed view of a playlist, along with reordering functionality.
 
-> 提供播放清單一覽，以及重新排列的功能
+### 5. Player
 
-### 5. 播放器
+![](https://imgur.com/ROIRdpI.png "Player")
 
-![](https://imgur.com/ROIRdpI.png "播放器")
+> The built-in player supports basic playback, looping, and shuffle mode.
 
-> 提供基本播放功能，並支持循環播放、隨機播放等
+![](https://imgur.com/k4a3Vj5.png "Menu")
 
-![](https://imgur.com/k4a3Vj5.png "播放器選單")
-
-> 選單列提供切歌功能，並可開啟隨機播放
+> The player menu allows you to skip tracks and toggle shuffle mode.
