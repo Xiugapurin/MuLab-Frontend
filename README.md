@@ -27,11 +27,15 @@ It provides YouTube audio downloading and offline music playback features.
 
 ![](https://imgur.com/rKfZVml.png "Download")
 
+---
+
 ### 2. Music Library
 
 ![](https://imgur.com/fpr8PPB.png "Library")
 
 > Downloaded audio files will be stored here. You can add them to any playlist, play all, or sort them using available options.
+
+---
 
 ### 3. Playlists
 
@@ -39,11 +43,15 @@ It provides YouTube audio downloading and offline music playback features.
 
 > You can save downloaded audio into custom playlists and enable loop or shuffle playback.
 
+---
+
 ### 4. Playlist Details
 
 ![](https://imgur.com/Frh4FK3.png "Details")
 
 > Provides a detailed view of a playlist, along with reordering functionality.
+
+---
 
 ### 5. Player
 
